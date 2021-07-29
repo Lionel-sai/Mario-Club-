@@ -1,0 +1,193 @@
+body, ul, li, h1, h2, a{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    background-color: #F43232;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width:100%;
+    z-index: 1;
+    top:0px;
+    left:0px;
+    padding: 5px 0px;
+}
+h1{
+    border: 8px solid white;
+    padding: 1px 12px;
+    display: inline-block;
+    border-radius: 36px;
+}
+.banner{
+    position: relative;
+}
+.banner img{
+    width: 100%;
+}
+.banner .welcome{
+    position: absolute;
+    left: 0%;
+    top:10%;
+    padding: 30px;
+    color: white;
+    background-color: #Feb614;
+}
+.banner h2{
+    font-size: 50px;
+}
+.banner span{
+    font-size: 1.3em;
+}
+nav{
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: sticky;
+    top: 80px;
+}
+nav ul{
+    max-width: 1200px;
+    margin:0 auto;
+    white-space: nowrap;
+}
+nav li{
+    font-size: 24px;
+    display: inline-block;
+    width: 25%;
+}
+nav li a{
+    color: #4b4b4b;
+    text-decoration: none;
+}
+nav .join{
+    color:#F43232;
+}
+main{
+    max-width: 100%;
+    padding: 0px 40px;
+    margin: 80px auto;
+    box-sizing: border-box;
+}
+article h2{
+    color:#F43232;
+    font-size: 42px;
+}
+article p{
+    line-height: 2em;
+    color: #4b4b4b;
+    text-align: justify;
+}
+.images{
+    text-align: center;
+    white-space: nowrap;
+}
+.images li{
+    width: 40%;
+    margin: 0 5%;
+    display: inline-block;
+}
+.images li img{
+    max-width: 100%;
+    margin: 20px auto;
+}
+section.join{
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 60px 20px;
+    color: #4b4b4b;
+}
+section.join h2{
+    font-size: 42px;
+}
+form input{
+    border: 3px solid white;
+    border-radius: 30px;
+    font-size: 24px;
+    margin: 20px 0;
+    padding: 10px 20px;
+}
+footer{
+    background-color: #F43232;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+}
+nav li:hover{
+    text-decoration: underline;
+}
+.images li:hover{
+    position: relative;
+    top: -10px;
+}
+form input:focus{
+    border: 5px dashed #4b4b4b;
+    outline: none;
+}
+form input:valid{
+    border: 5px solid green;
+}
+article p::first-letter{
+    color: red;
+    font-size: 20px;
+}
+p::selection{
+    color:#ffffff;
+    background-color: #F43232;
+}
+
+/* responsive style */
+
+@media  screen and (max-width: 1400px) {
+
+    .banner .welcome h2{
+        font-size: 60px;
+    }
+    nav li{
+        font-size: 18px;
+    }
+
+}
+@media  screen and (max-width: 960px) {
+
+    .banner .welcome h2{
+        font-size: 40px;
+    }
+
+
+}
+@media  screen and (max-width: 700px) {
+
+    .banner .welcome{
+        position: relative;
+        text-align: center;
+        padding: 10px;
+    }
+    .banner .welcome br{
+        display: none;
+    }
+    .banner .welcome h2{
+        font-size: 25px;
+    }
+    .banner .welcome span{
+        font-size: 1em;
+    }
+    .images li{
+        width: 100%;
+        margin: 5px auto;
+        display: block;
+    }
+
+}
+@media  screen and (max-width: 560px) {
+    nav li{
+        width: 100%;
+        font-size: 20px;
+        display: block;
+    }
+    header{
+        position: relative;
+    }
+    nav{
+        top: 0px;
+    }
+}
